@@ -46,7 +46,7 @@ def print_stats(title: str, stats: Stats) -> None:
     )
 
 
-def main() -> None:
+def run() -> None:
     args = parse_args()
     books = load_books(args.data)
     genre: str = args.boost_genre
@@ -79,4 +79,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    run()

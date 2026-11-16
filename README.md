@@ -40,8 +40,8 @@ python -m venv .venv
 pip install -r requirements.txt
 
 pytest -q
-python app.py --top 5 --boost-genre фентезі --factor 1.1
-python app.py --top 3 --boost-genre детектив --factor 1.2 --min-rating 4
+python main.py --top 5 --boost-genre фентезі --factor 1.1
+python main.py --top 3 --boost-genre детектив --factor 1.2 --min-rating 4
 
 black --check .
 ruff check .
